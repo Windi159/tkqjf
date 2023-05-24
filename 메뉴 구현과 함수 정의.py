@@ -19,7 +19,7 @@ def displayPhoto(img, height, width):
 
 def func_open():
     filename = askopenfilename(parent=root,
-                               filetypes=(("모든 그림 파일", "*.jpg; *.jpeg; *.bmp *.png; *.tif"), ("모든 파일", " *.* ")))
+                               filetypes=(("모든 그림 파일", "*.jpg; *.jpeg; *.bmp; *.png; *.tif"), ("모든 파일", " *.* ")))
     inPhoto = Image.open(filename)
     inX = inPhoto.width
     inY = inPhoto.height
